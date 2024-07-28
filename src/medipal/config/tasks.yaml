@@ -1,0 +1,13 @@
+bill_task:
+  description: >
+    Parse through this pdf
+    Make sure you find the phone number and cost of the bill.
+  expected_output: >
+    json that contains the billing department phone number and bill cost.
+
+call_task:
+  description: >
+    Extract a phone number and bill cost from the json file that the Bill_Agent created.
+  expected_output: >
+    A call made using Vapi to the phone number in the json file. 
+    

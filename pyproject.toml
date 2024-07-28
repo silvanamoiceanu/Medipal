@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "medipal"
+version = "0.1.0"
+description = "medipal using crewAI"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<=3.13"
+crewai = { extras = ["tools"], version = "^0.41.1" }
+langchain-groq = "^0.1.6"
+crewai-tools = "^0.4.26"
+langchain-community = "^0.2.10"
+pymupdf = "^1.24.9"
+
+[tool.poetry.scripts]
+medipal = "medipal.main:run"
+train = "medipal.main:train"
+replay = "medipal.main:replay"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
