@@ -1,1 +1,1 @@
-The PDF document does not contain searchable text or the necessary billing information (phone number and bill cost) could not be found within the document. Therefore, the required information cannot be extracted using the provided tools.
+A call made using Vapi to the phone number 800-803-8155. The current bill cost is $100.00.

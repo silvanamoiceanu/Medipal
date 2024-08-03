@@ -20,7 +20,7 @@ import os
 @tool('PDF search Tool')
 def pdf_search_tool():
 	"""useful for searching PDFs"""
-	return PyMuPDFLoader("/Users/silvanamoiceanu/Desktop/medipal/medicalbill.pdf").load()
+	return PyMuPDFLoader("./medicalbill.pdf").load()
 
 @CrewBase
 class MedipalCrew():
@@ -31,8 +31,8 @@ class MedipalCrew():
 
 
 
-	# def __init__(self) -> None:
-		# filename = os.path.basename("./medicalbill.pdf")
+	def __init__(self) -> None:
+		filename = os.path.basename("./medicalbill.pdf")
 		# file_path = os.path.basename(filename)
 		# self.pdf_search_tool = PDFSearchTool(pdf="https://github.com/invoice-x/invoice2data/blob/master/tests/compare/NetpresseInvoice.pdf")
 		# loader =  PyPDFLoader("./medicalbill.pdf")
